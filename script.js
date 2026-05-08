@@ -21,6 +21,27 @@ mobileLinks.forEach(link => {
   });
 });
 
+const EMAIL = 'kl.carcueva05@gmail.com';
+const toast = document.getElementById('toast');
+let toastTimer;
+
+function copyEmail(btn) {
+  navigator.clipboard.writeText(EMAIL).then(() => {
+    const original = btn.textContent;
+    btn.textContent = 'Copied!';
+    clearTimeout(toastTimer);
+    toast.classList.add('show');
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('show');
+      btn.textContent = original;
+    }, 2200);
+  });
+}
+
+document.querySelectorAll('.copy-email').forEach(btn => {
+  btn.addEventListener('click', () => copyEmail(btn));
+});
+
 const reveals  = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {

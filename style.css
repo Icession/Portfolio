@@ -492,3 +492,58 @@ footer {
   footer { padding: 28px 24px; flex-direction: column; align-items: flex-start; }
   .contact-actions { flex-direction: column; align-items: center; }
 }
+.nav-cta {
+  border: none;
+  cursor: pointer;
+}
+
+.copy-email {
+  cursor: pointer;
+}
+
+.mobile-email-btn {
+  font-family: var(--ff-display);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: var(--text);
+  background: none;
+  border: none;
+  transition: color 0.2s;
+}
+.mobile-email-btn:hover { color: var(--accent); }
+
+.footer-email-btn {
+  font-family: var(--ff-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  padding: 0;
+}
+.footer-email-btn:hover { color: var(--accent); }
+
+.toast {
+  position: fixed;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--ff-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  padding: 12px 28px;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 9999;
+  white-space: nowrap;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
