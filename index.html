@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kurt Laurence P. Carcueva — Portfolio</title>
   <script>document.documentElement.classList.add('js');</script>
-  <meta name="description" content="Kurt Laurence P. Carcueva — freelance frontend & mobile developer based in Cebu, Philippines. Designing and building digital products with React, React Native, Expo, Firebase, and Supabase." />
+  <meta name="description" content="Kurt Laurence P. Carcueva — freelance full-stack & mobile developer based in Cebu, Philippines. Designing and building digital products with React, React Native, Expo, FastAPI, Firebase, and Supabase." />
   <meta name="author" content="Kurt Laurence P. Carcueva" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Kurt Laurence P. Carcueva — Portfolio" />
@@ -71,8 +71,8 @@
 
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>React</span><b>·</b><span>React Native</span><b>·</b><span>Expo</span><b>·</b><span>TypeScript</span><b>·</b><span>Firebase</span><b>·</b><span>Supabase</span><b>·</b><span>Figma</span><b>·</b><span>Spring Boot</span><b>·</b><span>Node.js</span><b>·</b><span>Python</span><b>·</b><span>UI / UX</span><b>·</b>
-        <span>React</span><b>·</b><span>React Native</span><b>·</b><span>Expo</span><b>·</b><span>TypeScript</span><b>·</b><span>Firebase</span><b>·</b><span>Supabase</span><b>·</b><span>Figma</span><b>·</b><span>Spring Boot</span><b>·</b><span>Node.js</span><b>·</b><span>Python</span><b>·</b><span>UI / UX</span><b>·</b>
+        <span>React</span><b>·</b><span>React Native</span><b>·</b><span>Expo</span><b>·</b><span>TypeScript</span><b>·</b><span>Firebase</span><b>·</b><span>Supabase</span><b>·</b><span>Figma</span><b>·</b><span>Spring Boot</span><b>·</b><span>Node.js</span><b>·</b><span>Python</span><b>·</b><span>FastAPI</span><b>·</b><span>Gemini API</span><b>·</b><span>UI / UX</span><b>·</b>
+        <span>React</span><b>·</b><span>React Native</span><b>·</b><span>Expo</span><b>·</b><span>TypeScript</span><b>·</b><span>Firebase</span><b>·</b><span>Supabase</span><b>·</b><span>Figma</span><b>·</b><span>Spring Boot</span><b>·</b><span>Node.js</span><b>·</b><span>Python</span><b>·</b><span>FastAPI</span><b>·</b><span>Gemini API</span><b>·</b><span>UI / UX</span><b>·</b>
       </div>
     </div>
   </section>
@@ -88,12 +88,12 @@
         <div><dt>Status</dt><dd>Available for freelance &amp; remote</dd></div>
         <div><dt>Location</dt><dd>Cebu, Philippines</dd></div>
         <div><dt>Focus</dt><dd>Full-stack · Mobile · UI/UX</dd></div>
-        <div><dt>Services</dt><dd>Web apps · Landing pages</dd></div>
+        <div><dt>Services</dt><dd>Web &amp; mobile apps · AI integrations</dd></div>
         <div><dt>Availability</dt><dd>Remote · GMT+8</dd></div>
       </dl>
       <div class="profile-body">
         <p class="reveal drop">I'm Kurt Laurence P. Carcueva — a developer who designs and builds digital products across web and mobile. I work across the full stack, from clean, responsive front-ends to backends, databases, and deployment.</p>
-        <p class="reveal reveal-1">Alongside the engineering, I work in UI/UX design — thinking past the code to how people actually feel using a product. I designed and built <em>SkillSwap</em>, taking it from Figma wireframes to a deployed React SPA, and <em>SplitVault</em>, a native personal budgeting app for Android and the web backed by Firebase.</p>
+        <p class="reveal reveal-1">Alongside the engineering, I work in UI/UX design — thinking past the code to how people actually feel using a product. I designed and built <em>SkillSwap</em>, taking it from Figma wireframes to a deployed React SPA; <em>SplitVault</em>, a native personal budgeting app for Android and the web backed by Firebase; and <em>ResuMatch</em>, an AI resume analyzer pairing a React front-end with a FastAPI + Gemini backend.</p>
       </div>
     </div>
   </section>
@@ -142,6 +142,34 @@
     <article class="case reveal">
       <div class="case-text">
         <div class="case-no">001</div>
+        <h3 class="case-title">Resu<em>Match</em></h3>
+        <div class="case-meta"><span>2026</span><span>Solo Build</span><span>AI Web App</span></div>
+        <p class="case-desc">An AI resume &amp; job-fit analyzer. Paste in a resume and a job description, and
+           ResuMatch returns a match score, ATS-readiness feedback, and a tailored cover letter on the spot.
+           A React / Vite front-end talks to a FastAPI (Python) backend that wraps the Gemini API behind
+           retry, backoff, and prompt guardrails — with JWT auth, saved profiles, and PostgreSQL persistence.</p>
+        <ul class="stack"><li>React</li><li>Vite</li><li>FastAPI</li><li>Python</li><li>Gemini API</li><li>PostgreSQL</li></ul>
+        <div class="case-links">
+          <a href="https://resumatch-kl.vercel.app" target="_blank" rel="noopener noreferrer" class="link-arrow">Live demo <i>↗</i></a>
+          <a href="https://github.com/Icession" target="_blank" rel="noopener noreferrer" class="link-arrow">View code <i>↗</i></a>
+        </div>
+      </div>
+      <div class="case-visual" style="animation-delay:-1.4s">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i></div>
+          <div class="browser-screen shots">
+            <img src="resumatch-home.png" alt="ResuMatch home — paste a resume and job description" />
+            <img src="resumatch-results.png" alt="ResuMatch job-fit score and analysis results" />
+            <img src="resumatch-letter.png" alt="ResuMatch AI-generated cover letter" />
+            <img src="resumatch-profiles.png" alt="ResuMatch saved profiles dashboard" />
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case reveal">
+      <div class="case-text">
+        <div class="case-no">002</div>
         <h3 class="case-title">Skill<em>Swap</em></h3>
         <div class="case-meta"><span>2026</span><span>Solo Build</span><span>Web App</span></div>
         <p class="case-desc">A peer-to-peer skill exchange platform that connects people who want to
@@ -170,7 +198,7 @@
 
     <article class="case reveal">
       <div class="case-text">
-        <div class="case-no">002</div>
+        <div class="case-no">003</div>
         <h3 class="case-title">Split<em>Vault</em></h3>
         <div class="case-meta"><span>2026</span><span>Solo Build</span><span>Android · Web</span></div>
         <p class="case-desc">A personal budgeting app — <em>"your money, split smart."</em> SplitVault
@@ -214,6 +242,7 @@
       <a href="Kurt-Carcueva-CV.pdf" target="_blank" rel="noopener noreferrer">Résumé ↓</a>
       <a href="https://www.figma.com/design/SV4OVrVb3rdSOH5aYgqbJA/SkillSwap" target="_blank" rel="noopener noreferrer">Figma ↗</a>
       <a href="https://skill-swap-eight-eta.vercel.app" target="_blank" rel="noopener noreferrer">SkillSwap ↗</a>
+      <a href="https://resumatch-kl.vercel.app" target="_blank" rel="noopener noreferrer">ResuMatch ↗</a>
     </div>
   </section>
 
