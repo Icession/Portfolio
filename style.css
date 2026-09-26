@@ -273,6 +273,10 @@ em { font-style: italic; }
 .skill-col li:hover { color: var(--accent); padding-left: 6px; }
 .skill-col li:hover::before { opacity: 1; }
 
+/* Full-width row for the AI workflow column */
+.skill-col--wide { grid-column: 1 / -1; }
+.skill-col--wide ul { display: flex; flex-wrap: wrap; column-gap: 44px; row-gap: 2px; }
+
 /* ---------- Work / Case studies ---------- */
 .case {
   display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 5vw, 70px);
@@ -478,6 +482,7 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
 }
 @media (max-width: 600px) {
   .skills-grid { grid-template-columns: 1fr; }
+  .skill-col--wide ul { display: block; }
   .track li { grid-template-columns: 1fr; gap: 8px; }
   .hero-top { font-size: 0.6rem; }
   .case-links { flex-direction: column; gap: 14px; align-items: flex-start; }
